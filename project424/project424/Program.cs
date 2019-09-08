@@ -12,27 +12,24 @@ namespace project424
             {
                 if (y > 0)
                 {
-                    Console.WriteLine("I");
+                    Console.WriteLine("1");
                 }
                 else
                 {
-                    Console.WriteLine("IV");
+                    Console.WriteLine("4");
                 }
-
-
             }
             else
             {
-                if(y > 0)
+                if (y > 0)
                 {
-                    Console.WriteLine("II");
+                    Console.WriteLine("2");
                 }
                 else
                 {
-                    Console.WriteLine("III");
+                    Console.WriteLine("3");
                 }
             }
-
         }
     }
 }
