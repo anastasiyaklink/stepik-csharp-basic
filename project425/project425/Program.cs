@@ -14,8 +14,9 @@ namespace project425
             {
                 var x1 = (-b - Math.Sqrt(d)) / (2 * a);
                 var x2 = (-b + Math.Sqrt(d)) / (2 * a);
-                Console.WriteLine(x1);
-                Console.WriteLine(x2);
+
+                Console.WriteLine(Math.Min(x1,x2));
+                Console.WriteLine(Math.Max(x1,x2));
             }
             else
             {
@@ -25,13 +26,10 @@ namespace project425
                 }
                 else
                 {
-                    var x = (-b / (2 * a));
+                    var x = -b / (2 * a);
                     Console.WriteLine(x);
                 }
-
             }
-
-
         }
     }
 }
