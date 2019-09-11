@@ -1,7 +1,7 @@
 
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "test349", "test349\test349.csproj", "{5984A586-FD0A-42F3-9550-62F06DE2AB78}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "test349", "test349\test349.csproj", "{F6307D67-0309-4194-A848-FFB331996CE8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,9 +9,9 @@ Global
 		Release|anycpu = Release|anycpu
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{5984A586-FD0A-42F3-9550-62F06DE2AB78}.Debug|anycpu.ActiveCfg = Debug|anycpu
-		{5984A586-FD0A-42F3-9550-62F06DE2AB78}.Debug|anycpu.Build.0 = Debug|anycpu
-		{5984A586-FD0A-42F3-9550-62F06DE2AB78}.Release|anycpu.ActiveCfg = Release|anycpu
-		{5984A586-FD0A-42F3-9550-62F06DE2AB78}.Release|anycpu.Build.0 = Release|anycpu
+		{F6307D67-0309-4194-A848-FFB331996CE8}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{F6307D67-0309-4194-A848-FFB331996CE8}.Debug|anycpu.Build.0 = Debug|anycpu
+		{F6307D67-0309-4194-A848-FFB331996CE8}.Release|anycpu.ActiveCfg = Release|anycpu
+		{F6307D67-0309-4194-A848-FFB331996CE8}.Release|anycpu.Build.0 = Release|anycpu
 	EndGlobalSection
 EndGlobal
