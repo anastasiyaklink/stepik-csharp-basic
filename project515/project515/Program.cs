@@ -10,7 +10,7 @@ namespace project515
 
             for (int i = 1; i <= N; i++)
             {
-                if (Math.Pow(i, 2) <= (Math.Pow(N,2)))
+                if (Math.Pow(i, 2) <= Math.Pow(N,2))
                 {
                     Console.WriteLine(Math.Pow(i, 2));
                 }
