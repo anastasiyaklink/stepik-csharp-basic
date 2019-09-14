@@ -13,11 +13,10 @@ namespace project523
             for (int i = 1; i <= N; i++)
             {
                 num = Convert.ToInt32(Console.ReadLine());
-                if (num % 2==0 && num % 3 !=0)
+                if (num % 2 == 0 && num % 3 != 0)
                 {
                     sum = sum + num;
                 }
-                  
             }
             Console.WriteLine(sum);
         }
