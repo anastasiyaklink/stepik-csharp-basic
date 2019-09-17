@@ -14,8 +14,7 @@ namespace project542
                 Console.WriteLine(x);
                 x = x * 2;
                 i++;
-            }
-            
+            }   
         }
     }
 }
