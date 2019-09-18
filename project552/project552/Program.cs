@@ -13,10 +13,9 @@ namespace project552
             while (N1 > 0)
             {
                 int digit = N1 % 10;
-                sum = sum + digit; // sum = sum+digit
-                N1 = N1 / 10; //N1=N1/10
+                sum = sum + digit; 
+                N1 = N1 / 10; 
             }
-            Console.WriteLine(sum);
             Console.WriteLine((N % sum == 0) ? "YES" : "NO");
         }
     }
