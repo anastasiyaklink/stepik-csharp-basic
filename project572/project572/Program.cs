@@ -15,9 +15,9 @@ namespace project572
 
                 while (x > 0)
                 {
-                    int y = x % 10;
+                    int digit = x % 10;
 
-                    if (y == 7) sum = sum + 1;
+                    if (digit == 7) sum = sum + 1;
                     x = x / 10;
                 }
             }
