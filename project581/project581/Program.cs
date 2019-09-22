@@ -7,12 +7,12 @@ namespace project581
         public static void Main(string[] args)
         {
             int N = Convert.ToInt32(Console.ReadLine());
-            for (int i = N-1; i>=1; i--)
+            for (int i = N - 1; i >= 1; i--)
             {
-                if (N%i==0)
+                if (N % i == 0)
                 {
                     Console.WriteLine(i);
-                    break; 
+                    break;
                 }
             }
         }
