@@ -8,7 +8,7 @@ namespace project5102
         {
             int N = Convert.ToInt32(Console.ReadLine());
             int num;
-            int max = 0;
+            int max = -(int)Math.Pow(10, 6);
             for (int i = 1; i <= N; i++)
             {
                 num = Convert.ToInt32(Console.ReadLine());
