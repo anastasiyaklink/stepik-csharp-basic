@@ -7,10 +7,16 @@ namespace test5112
         public static void Main(string[] args)
         {
             string n = Console.ReadLine();
-            char[] array = n.ToCharArray();
-            Array.Reverse(array);
-            string n2 = new string(array);
-            Console.WriteLine(n == n2 ? "YES" : "NO");
+            bool palindrome = true;
+            for (int i = 0; i < n.Length / 2; i++)
+            {
+                if (n[i] != n[n.Length - i - 1])
+                {
+                    palindrome = false;
+                    break;
+                }
+            }
+            Console.WriteLine(palindrome ? "YES" : "NO");
         }
     }
 }
