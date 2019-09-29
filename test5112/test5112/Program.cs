@@ -6,17 +6,26 @@ namespace test5112
     {
         public static void Main(string[] args)
         {
-            string n = Console.ReadLine();
-            bool palindrome = true;
-            for (int i = 0; i < n.Length / 2; i++)
+            int a = Convert.ToInt32(Console.ReadLine());
+
+            //  Количество цифр в числе
+            int numDigits = (int) Math.Ceiling(Math.Log10(a));
+            int halfDigits = numDigits / 2;
+            int b = 0;
+            for (int i = 0; i < halfDigits; i++)
             {
-                if (n[i] != n[n.Length - i - 1])
-                {
-                    palindrome = false;
-                    break;
-                }
+                b = b * 10 + a % 10;
+                a = a / 10;
             }
-            Console.WriteLine(palindrome ? "YES" : "NO");
+
+            //  При нечетном количестве цифр среднюю цифру не учитываем,
+            //  она ни на что не влияет
+            if (numDigits % 2 != 0)
+            {
+                a = a / 10;
+            }
+
+            Console.WriteLine(a == b ? "YES" : "NO");
         }
     }
 }
