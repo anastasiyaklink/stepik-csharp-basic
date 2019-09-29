@@ -10,22 +10,28 @@ namespace test5112
 
             //  Количество цифр в числе
             int numDigits = (int) Math.Ceiling(Math.Log10(a));
+            int base10 = (int)Math.Pow(10, numDigits - 1);
             int halfDigits = numDigits / 2;
-            int b = 0;
-            for (int i = 0; i < halfDigits; i++)
+
+            bool palindrome = true;
+            for (int i = 0;
+                i < halfDigits;
+                // убираем два разряда из степени десятки
+                // (число становится меньше на два разряда каждую итерацию)
+                i++, base10 = base10 / 100)
             {
-                b = b * 10 + a % 10;
+                int leftDigit = a / base10;
+                int rightDigit = a % 10;
+                if (leftDigit != rightDigit)
+                {
+                    palindrome = false;
+                    break;
+                }
+                a = a - leftDigit * base10;
                 a = a / 10;
             }
 
-            //  При нечетном количестве цифр среднюю цифру не учитываем,
-            //  она ни на что не влияет
-            if (numDigits % 2 != 0)
-            {
-                a = a / 10;
-            }
-
-            Console.WriteLine(a == b ? "YES" : "NO");
+            Console.WriteLine(palindrome ? "YES" : "NO");
         }
     }
 }
