@@ -13,6 +13,5 @@ namespace test5116
             Console.Write(m);
         }
     }
-
 }
     
