@@ -18,7 +18,7 @@ namespace test5118
 
                     int afterRoot = N / beforeRoot;
 
-                    if (afterRoot != beforeRoot)
+                    if (beforeRoot < afterRoot)
                     {
                         sum = sum + afterRoot;
                     }
