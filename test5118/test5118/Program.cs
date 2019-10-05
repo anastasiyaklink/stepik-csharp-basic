@@ -4,17 +4,24 @@ namespace test5118
 {
     class MainClass
     {
-        static int SumFactors(int N)
+        static int SumDividers(int N)
         {
             int sum = 1;
 
             double root = Math.Sqrt(N);
 
-            for (int i = 2; i < root; i++)
+            for (int beforeRoot = 2; beforeRoot <= root; beforeRoot++)
             {
-                if (N % i == 0)
+                if (N % beforeRoot == 0)
                 {
-                    sum = sum + i + N / i;
+                    sum = sum + beforeRoot;
+
+                    int afterRoot = N / beforeRoot;
+
+                    if (afterRoot != beforeRoot)
+                    {
+                        sum = sum + afterRoot;
+                    }
                 }
             }
 
@@ -27,9 +34,9 @@ namespace test5118
 
             for (int n = 1; n < k; n++)
             {
-                int m = SumFactors(n);
+                int m = SumDividers(n);
 
-                if (n < m && SumFactors(m) == n)
+                if (n < m && SumDividers(m) == n)
                 {
                     Console.WriteLine(n + " " + m);
                 }
