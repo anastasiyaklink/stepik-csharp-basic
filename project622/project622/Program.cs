@@ -7,11 +7,10 @@ namespace project622
         public static void Main(string[] args)
         {
             string s = Console.ReadLine();
-            int countChar = s.Length;
 
-            for (int index = countChar - 1; index >= 0; index--)
+            for (int i = s.Length - 1; i >= 0; i--)
             {
-                Console.Write(s[index]);
+                Console.Write(s[i]);
             }
 
         }
