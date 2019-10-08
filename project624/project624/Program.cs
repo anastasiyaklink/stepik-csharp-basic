@@ -7,21 +7,15 @@ namespace project624
         public static void Main(string[] args)
         {
             string s = Console.ReadLine();
-            for (int index = 0; index <= s.Length - 1; index++)
+            for (int i = 0; i <= s.Length - 1; i++)
             {
-                if (s[index] == 'x')
+                if (s[i] == 'x' || s[i] == 'w')
                 {
-                    Console.WriteLine("x");
+                    Console.WriteLine(s[i]);
                     break;
                 }
 
-                if (s[index] == 'w')
-                {
-                    Console.WriteLine("w");
-                    break;
-                }
-
-                if (index == s.Length - 1)
+                if (i == s.Length - 1)
                 {
                     Console.WriteLine("-1");
                 }
