@@ -8,9 +8,9 @@ namespace test637
         {
             string s = Console.ReadLine();
 
-            for (int i = 0; i <= s.Length - 1; i++)
+            foreach (char c in s)
             {
-                Console.Write (s[i] >= '0' && s[i] <= '9' ? s[i] + " " : "");
+                Console.Write (Char.IsDigit(c) ? c + " " : "");
             }
         }
     }
