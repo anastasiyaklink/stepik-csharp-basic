@@ -10,9 +10,7 @@ namespace test636
 
             for (int i = 0; i <= s.Length - 1; i++)
             {
-                Console.Write(s[i] != 'e' ? s[i]: 'i');
-                // if (s[i] != 'e') Console.Write(s[i]);
-                // else Console.Write("i");
+                Console.Write(s[i] != 'e' ? s[i] : 'i');
             }
         }
     }
