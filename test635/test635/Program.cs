@@ -8,17 +8,17 @@ namespace test635
         {
             string s = Console.ReadLine();
             int sum = 0;
-            for (int i = 0; i <= s.Length-1; i++)
+            for (int i = 0; i <= s.Length - 1; i++)
             {
-                if (s[i] == 'a' || s[i] == 'A'||
-                    s[i] == 'e' || s[i] == 'E'||
-                    s[i] == 'i' || s[i] == 'I'||
-                    s[i] == 'o' || s[i] == 'O'||
-                    s[i] == 'u' || s[i] == 'U')
+                if (s[i] == 'a' ||
+                    s[i] == 'e' ||
+                    s[i] == 'i' ||
+                    s[i] == 'o' ||
+                    s[i] == 'u' )
                 {
                     sum++;
                 }
-                
+
             }
             Console.WriteLine(sum);
         }
