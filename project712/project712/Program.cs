@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace program711
+namespace project712
 {
     class MainClass
     {
@@ -11,9 +11,9 @@ namespace program711
             string[] ss = s.Split(' ');
             for (int i = 0; i < N; i++)
             {
-                if (i % 3 == 0) Console.Write(ss[i] + " ");
+                int num = Convert.ToInt32(ss[i]);
+                if (num % 3 == 0) Console.Write(num + " ");
             }
         }
     }
 }
-
